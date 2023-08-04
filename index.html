@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="failed">Game Over Word Is:
+      <button onclick="location.reload()">Try Again</button>
+    </div>
+    <div class="succesed">Congratulations! <br> You guessed the word correctly
+      <button onclick="location.reload()">Try Again</button>
+    </div>
+    <div class="cotainer">
+        <div class="game-info">
+            <div class="game-name">Hangman</div>
+            <div class="category">
+                word From: <span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+        </div>
+        <hr>
+        <div class="letters-guess"></div>
+    </div>
+    <audio id="success" src="audio/success.mp4" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp4" preload="auto"></audio>
+    <audio id="failed" src="audio/failed.mp3" preload="auto"></audio>
+    <audio id="succesed" src="audio/succesed.mp3" preload="auto"></audio>
+    <script src="./main.js"></script>
+</body>
+</html>
